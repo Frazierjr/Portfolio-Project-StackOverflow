@@ -31,7 +31,7 @@ if __name__=="__main__":
     unique_values = df.loc[filt]
     #Results containing list of countries
     res = unique_values["Country"].value_counts()
-    print(res.head(15))
+    print(res.head())
     #Getting number of hobbyists
     hobbyist_values = df["Hobbyist"].value_counts()
     print(hobbyist_values)
