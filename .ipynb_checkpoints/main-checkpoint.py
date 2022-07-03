@@ -5,8 +5,6 @@
 import pandas as pd
 #Reading the csv file for data analysis
 df = pd.read_csv("survey_results_public.csv")
-
-
 #Checks if this Python file is the main execution file, and executes the code within the branch statement.
 if __name__=="__main__":
     #Cleaning data.
@@ -63,8 +61,8 @@ if __name__=="__main__":
     #Obtaining education levels.
     education_level = df["EdLevel"].value_counts()
     print(education_level)
-    #Average comp per category
-    print(df.groupby(["MainBranch"])["ConvertedComp"].mean())
+
+    print(df.groupby(["YearsCodePro"]).mean())
     
 
 
