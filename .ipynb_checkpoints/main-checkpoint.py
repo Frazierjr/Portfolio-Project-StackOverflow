@@ -53,7 +53,7 @@ if __name__=="__main__":
     all_languages_results = languages.str.split(";").explode()
     print(all_languages_results.value_counts().head())
 
-    #Gathering what OS used bt respondents
+    #Gathering what OS used by respondents
     os_values = df["OpSys"]
     filtered_os_values = os_values.str.split(";").explode()
     print(filtered_os_values.value_counts())
